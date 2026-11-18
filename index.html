@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<title>Sugargoo Spreadsheet | Product Finds & Buying Checklist</title>
+<meta name="description" content="Explore a Sugargoo spreadsheet guide with real CAFANS product references, searchable categories, reference USD prices, sizing checks and a shopping budget tool.">
+<meta name="theme-color" content="#123c30">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sugargoo Spreadsheet | Product Finds & Buying Checklist">
+<meta property="og:description" content="Compare selected CAFANS finds, understand reference prices and prepare your sizing, QC and shipping checklist.">
+<meta name="twitter:card" content="summary">
+<!--
+File: index.html
+Deployment: add a self-referencing canonical and og:url using this page's actual public URL.
+Do not canonicalize this independent page to CAFANS unless it is intentionally a duplicate.
+
+Research:
+https://sugargo.net/
+https://repsheet.net/spreadsheet/sugargoo
+https://www.sugargoo.work/spreadsheet/
+Search results vary by location and date; an exact Google first-page position was not verified.
+Implemented opportunities: readable initial HTML, honest source attribution, dated price
+references, accessible filters, transparent outbound destinations, sizing/QC guidance,
+and a budget tool without fabricated shipping quotes.
+
+Indexing has NOT been submitted. A deployed URL and verified site access are required.
+After deployment:
+1. Verify ownership in Google Search Console and Bing Webmaster Tools.
+2. Publish a sitemap containing the final canonical page URL and submit it in both tools.
+3. Inspect the final URL and request indexing using the available webmaster interfaces.
+An indexable HTML page does not guarantee crawling, indexing or rankings.
+-->
+<style>
+:root{--bg:#f4f6f1;--paper:#fff;--ink:#182e26;--muted:#596b62;--green:#123c30;--lime:#d5f58a;--line:#dce4d9;--radius:20px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-underline-offset:4px}
+button,input,select{font:inherit}
+button,a,input,select,summary{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid #739c35;outline-offset:4px}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+.skip{position:absolute;top:-70px;background:white;padding:12px;z-index:5}
+.skip:focus{top:8px}
+header{border-bottom:1px solid var(--line);background:#ffffffec}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0}
+.logo{font-size:19px;font-weight:850;text-decoration:none;letter-spacing:-.6px}
+.logo span{display:inline-grid;place-items:center;width:32px;height:32px;margin-right:9px;border-radius:10px;background:var(--green);color:var(--lime)}
+nav{display:flex;gap:22px;font-size:14px}
+nav a{text-decoration:none}
+.hero{margin:32px auto 0;background:var(--green);color:white;border-radius:28px;padding:68px 58px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:300px;height:300px;border:60px solid #ffffff08;border-radius:50%;right:-150px;top:-90px;pointer-events:none}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#c5e3a4}
+h1{font-size:clamp(38px,6.8vw,72px);line-height:1.05;letter-spacing:-3px;max-width:780px;margin:20px 0}
+.hero p{max-width:690px;color:#dce9df;font-size:18px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 22px;border:1px solid transparent;border-radius:100px;background:var(--green);color:white;font-weight:750;text-decoration:none;cursor:pointer}
+.btn.lime{background:var(--lime);color:var(--green)}
+.btn.outline{background:transparent;border-color:#9ab7a8;color:white}
+.hero small{display:block;margin-top:20px;color:#c6dbd0}
+.stripe{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:24px 0;border-bottom:1px solid var(--line)}
+.stripe b{display:block;font-size:15px}
+.stripe span{font-size:13px;color:var(--muted)}
+section{padding:48px 0}
+h2{font-size:clamp(26px,4vw,38px);letter-spacing:-1px;line-height:1.2;margin:0 0 16px}
+h3{font-size:19px;line-height:1.4;margin:0 0 10px}
+p{margin:0 0 16px}
+.muted,.intro{color:var(--muted)}
+.heading{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:24px}
+.heading p{max-width:700px;margin-bottom:0}
+.pill{display:inline-block;padding:5px 11px;border:1px solid var(--line);border-radius:100px;font-size:12px;font-weight:700;white-space:nowrap}
+.tools{display:grid;grid-template-columns:1fr 190px 190px;gap:14px;padding:20px;background:white;border:1px solid var(--line);border-radius:var(--radius)}
+label{display:block;font-size:13px;font-weight:750}
+input,select{width:100%;margin-top:7px;padding:11px 12px;border:1px solid #bbc9be;border-radius:10px;background:white;color:var(--ink);min-height:46px}
+.result{font-size:13px;color:var(--muted);margin:14px 0}
+.tablebox{background:white;border:1px solid var(--line);border-radius:var(--radius);overflow-x:auto}
+table{width:100%;border-collapse:collapse;text-align:left;min-width:640px}
+caption{text-align:left;padding:18px 20px;font-weight:750;background:#edf2e8}
+th{font-size:12px;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);background:#f9faf7}
+td,th{padding:17px 20px;border-bottom:1px solid var(--line)}
+tbody tr:last-child td{border-bottom:0}
+td:first-child{font-weight:650}
+.price{font-variant-numeric:tabular-nums;white-space:nowrap}
+td a{font-size:13px}
+.note{font-size:13px;color:var(--muted);margin-top:15px}
+.empty{padding:22px;background:white;border:1px solid var(--line);border-radius:12px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:25px;background:white;border:1px solid var(--line);border-radius:var(--radius)}
+.number{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#ecf3df;color:var(--green);font-weight:850;margin-bottom:17px}
+.card p{color:var(--muted);font-size:14px;margin-bottom:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.panel{padding:30px;border:1px solid var(--line);border-radius:var(--radius);background:white}
+ul,ol{padding-left:22px}
+li{margin:9px 0}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.total{background:#edf4e3;padding:18px;border-radius:12px;margin-top:20px}
+.total strong{display:block;font-size:30px;letter-spacing:-1px}
+.total span{font-size:13px}
+details{border-bottom:1px solid var(--line);padding:19px 0}
+summary{font-weight:750;cursor:pointer}
+details p{color:var(--muted);margin:12px 0 2px;max-width:850px}
+.cta{background:var(--green);color:white;border-radius:24px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.cta p{color:#dce9df;margin-bottom:0}
+footer{padding:28px 0 38px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer p{max-width:900px}
+[hidden]{display:none!important}
+@media(max-width:760px){.wrap{width:calc(100% - 28px)}.hero{padding:42px 25px}.hero h1{letter-spacing:-1.8px}nav{gap:13px;font-size:12px}.logo{font-size:15px}.logo span{display:none}.stripe{gap:12px}.tools,.split,.cards{grid-template-columns:1fr}.heading{display:block}.heading .pill{margin-top:15px}.cta{display:block}.cta .btn{margin-top:20px}.panel{padding:23px}section{padding:34px 0}.fields{gap:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"Sugargoo Spreadsheet | Product Finds & Buying Checklist",
+  "description":"Independent Sugargoo spreadsheet guide with selected CAFANS product references, sizing checks and a shopping budget calculator.",
+  "inLanguage":"en",
+  "mainEntity":{
+    "@type":"ItemList",
+    "name":"Selected CAFANS catalog references",
+    "numberOfItems":9,
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Leather Slides"},
+      {"@type":"ListItem","position":2,"name":"Platform Slides"},
+      {"@type":"ListItem","position":3,"name":"Heels"},
+      {"@type":"ListItem","position":4,"name":"Sweatshirt"},
+      {"@type":"ListItem","position":5,"name":"Thug Club - Rock Hoodie"},
+      {"@type":"ListItem","position":6,"name":"Corteiz Hoodie"},
+      {"@type":"ListItem","position":7,"name":"Kanye West Yeezy Bully Black Short Sleeve T-Shirt"},
+      {"@type":"ListItem","position":8,"name":"Unisex Embroidered Oversized T-Shirt"},
+      {"@type":"ListItem","position":9,"name":"Unisex T-Shirt"}
+    ]
+  }
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/cxxhg/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="wrap bar">
+<a href="https://cafans.com" class="logo"><span>S</span>THE FIND LIST</a>
+<nav aria-label="Page navigation">
+<a href="#catalog">Catalog</a>
+<a href="#guide">How to use</a>
+<a href="#faq">FAQ</a>
+</nav>
+</div>
+</header>
+<main id="main" class="wrap">
+<div class="hero">
+<div class="eyebrow">Independent product discovery guide</div>
+<h1>Sugargoo spreadsheet</h1>
+<p>A clearer starting point for your next shortlist. Explore real CAFANS catalog references, compare indicative prices and check fit, product details and total costs before ordering.</p>
+<div class="actions">
+<a class="btn lime" href="https://cafans.com">Sugargoo spreadsheet <span aria-hidden="true">&nbsp;↗</span></a>
+<a class="btn outline" href="https://cafans.com">Buy it now <span aria-hidden="true">&nbsp;↗</span></a>
+</div>
+<small>Both buttons open CAFANS. This page is independent and is not operated by Sugargoo.</small>
+</div>
+
+<div class="stripe" aria-label="Catalog features">
+<div><b>Real catalog references</b><span>Selected from CAFANS</span></div>
+<div><b>Visible reference prices</b><span>Item cost, not delivered cost</span></div>
+<div><b>Practical buying checks</b><span>Sizing, photos and budget</span></div>
+</div>
+
+<section aria-labelledby="about-title">
+<div class="split">
+<div>
+<div class="eyebrow" style="color:#557046">Start with the essentials</div>
+<h2 id="about-title">What is a Sugargoo spreadsheet?</h2>
+</div>
+<div>
+<p class="intro">A Sugargoo spreadsheet is a product research list used to organize finds, listing links, prices and buying notes. A useful row identifies the exact product option and records what still needs checking.</p>
+<p class="intro">This version provides a small CAFANS catalog selection alongside comparison tools. Its outbound shopping links lead to CAFANS; they do not place an order on Sugargoo. If you plan to use Sugargoo, confirm the original seller link and current item acceptance with your chosen service before paying.</p>
+</div>
+</div>
+</section>
+
+<section id="catalog" aria-labelledby="catalog-title">
+<div class="heading">
+<div>
+<h2 id="catalog-title">Browse the product directory</h2>
+<p class="intro">Nine selected listings from the CAFANS homepage. Search the names, narrow the category or sort by reference price.</p>
+</div>
+<span class="pill">Source viewed: November 19, 2026</span>
+</div>
+<div class="tools">
+<label for="search">Search this selection
+<input id="search" type="search" placeholder="Try hoodie, slides or T-shirt" autocomplete="off">
+</label>
+<label for="category">Category
+<select id="category">
+<option value="all">All categories</option>
+<option value="Shoes">Shoes</option>
+<option value="Hoodies & Sweaters">Hoodies & Sweaters</option>
+<option value="T-Shirts">T-Shirts</option>
+</select>
+</label>
+<label for="sort">Sort listings
+<select id="sort">
+<option value="original">Catalog order</option>
+<option value="low">Price: low to high</option>
+<option value="high">Price: high to low</option>
+<option value="name">Name: A–Z</option>
+</select>
+</label>
+</div>
+<p id="count" class="result" role="status" aria-live="polite">9 products in this selection.</p>
+<div class="tablebox">
+<table id="products">
+<caption>CAFANS product selection · indicative USD item prices</caption>
+<thead><tr><th scope="col">Product</th><th scope="col">Category</th><th scope="col">Reference USD</th><th scope="col">Catalog</th></tr></thead>
+<tbody>
+<tr data-category="Shoes" data-price="62.36"><td>Leather Slides</td><td>Shoes</td><td class="price">$62.36</td><td><a href="https://cafans.com" aria-label="Browse Leather Slides on the CAFANS catalog">Browse CAFANS ↗</a></td></tr>
+<tr data-category="Shoes" data-price="46.67"><td>Platform Slides</td><td>Shoes</td><td class="price">$46.67</td><td><a href="https://cafans.com" aria-label="Browse Platform Slides on the CAFANS catalog">Browse CAFANS ↗</a></td></tr>
+<tr data-category="Shoes" data-price="66.50"><td>Heels</td><td>Shoes</td><td class="price">$66.50</td><td><a href="https://cafans.com" aria-label="Browse Heels on the CAFANS catalog">Browse CAFANS ↗</a></td></tr>
+<tr data-category="Hoodies & Sweaters" data-price="27.50"><td>Sweatshirt</td><td>Hoodies &amp; Sweaters</td><td class="price">$27.50</td><td><a href="https://cafans.com" aria-label="Browse Sweatshirt on the CAFANS catalog">Browse CAFANS ↗</a></td></tr>
+<tr data-category="Hoodies & Sweaters" data-price="37.22"><td>Thug Club - Rock Hoodie</td><td>Hoodies &amp; Sweaters</td><td class="price">$37.22</td><td><a href="https://cafans.com" aria-label="Browse Thug Club Rock Hoodie on the CAFANS catalog">Browse CAFANS ↗</a></td></tr>
+<tr data-category="Hoodies & Sweaters" data-price="27.50"><td>Corteiz Hoodie</td><td>Hoodies &amp; Sweaters</td><td class="price">$27.50</td><td><a href="https://cafans.com" aria-label="Browse Corteiz Hoodie on the CAFANS catalog">Browse CAFANS ↗</a></td></tr>
+<tr data-category="T-Shirts" data-price="22.92"><td>Kanye West Yeezy Bully Black Short Sleeve T-Shirt</td><td>T-Shirts</td><td class="price">$22.92</td><td><a href="https://cafans.com" aria-label="Browse Kanye West Yeezy Bully T-Shirt on the CAFANS catalog">Browse CAFANS ↗</a></td></tr>
+<tr data-category="T-Shirts" data-price="32.64"><td>Unisex Embroidered Oversized T-Shirt</td><td>T-Shirts</td><td class="price">$32.64</td><td><a href="https://cafans.com" aria-label="Browse Unisex Embroidered Oversized T-Shirt on the CAFANS catalog">Browse CAFANS ↗</a></td></tr>
+<tr data-category="T-Shirts" data-price="29.72"><td>Unisex T-Shirt</td><td>T-Shirts</td><td class="price">$29.72</td><td><a href="https://cafans.com" aria-label="Browse Unisex T-Shirt on the CAFANS catalog">Browse CAFANS ↗</a></td></tr>
+</tbody>
+</table>
+</div>
+<p id="empty" class="empty" hidden>No matching products in this selection. Try a shorter search or choose all categories.</p>
+<p class="note">Source: <a href="https://cafans.com">CAFANS homepage</a>, viewed November 19, 2026. These are recorded catalog references, not a live inventory feed. CAFANS labels its USD prices as estimates. Stock, options and current prices require confirmation. Product names are reproduced as listed; authenticity, quality and Sugargoo acceptance have not been verified.</p>
+<noscript><p class="note">All nine listings are available without JavaScript. Use your browser’s Find function to locate an item; interactive filtering and calculation require JavaScript.</p></noscript>
+<div class="actions">
+<a class="btn" href="https://cafans.com">Sugargoo spreadsheet</a>
+<a class="btn" href="https://cafans.com">Buy it now</a>
+</div>
+</section>
+
+<section id="guide" aria-labelledby="guide-title">
+<h2 id="guide-title">Turn a find into an informed decision</h2>
+<p class="intro">Keep the listing, selected option and unanswered questions together from the beginning.</p>
+<div class="cards">
+<article class="card">
+<span class="number">01</span>
+<h3>Identify the exact option</h3>
+<p>Open CAFANS, find the listing and record the seller link, color, size and quantity. A multi-option listing can show a price for a different version from the one pictured.</p>
+</article>
+<article class="card">
+<span class="number">02</span>
+<h3>Resolve sizing and photo gaps</h3>
+<p>Compare garment or shoe measurements with a suitable reference you own. Ask about unclear details. Seller images and photos from other orders do not establish the condition of your item.</p>
+</article>
+<article class="card">
+<span class="number">03</span>
+<h3>Confirm the complete quote</h3>
+<p>Check item acceptance, current price, return terms and delivery options with your chosen service. Include shipping, fees and applicable taxes before committing to a purchase.</p>
+</article>
+</div>
+</section>
+
+<section aria-labelledby="checks-title">
+<div class="split">
+<article class="panel">
+<h2 id="checks-title">What to check before shipping</h2>
+<ul>
+<li><strong>Identity:</strong> product, color, size and quantity match your selected option.</li>
+<li><strong>Measurements:</strong> distinguish chest width from circumference, and foot length from insole length.</li>
+<li><strong>Condition:</strong> inspect visible stitching, fastenings, surfaces and any reported damage in your order photos.</li>
+<li><strong>Missing evidence:</strong> request a clearer angle or measurement when a detail affects your decision.</li>
+<li><strong>Delivery:</strong> compare packaging dimensions, parcel weight, route restrictions and the quoted coverage.</li>
+<li><strong>Timing:</strong> check any return or exchange deadline before authorizing shipment.</li>
+</ul>
+<p class="note">A visual QC check has limits. It does not verify authenticity, material composition, durability or performance.</p>
+</article>
+<article class="panel" aria-labelledby="budget-title">
+<h2 id="budget-title">Build a shopping budget</h2>
+<p class="intro">Enter your own USD estimates. Blank charges remain unknown; the calculator does not supply shipping rates or tax advice.</p>
+<div class="fields">
+<label for="itemCost">Items subtotal (USD)<input id="itemCost" type="number" min="0" step="0.01" placeholder="Required" inputmode="decimal"></label>
+<label for="localCost">Domestic shipping (USD)<input id="localCost" type="number" min="0" step="0.01" placeholder="Unknown" inputmode="decimal"></label>
+<label for="serviceCost">Service / payment fees (USD)<input id="serviceCost" type="number" min="0" step="0.01" placeholder="Unknown" inputmode="decimal"></label>
+<label for="shippingCost">International shipping (USD)<input id="shippingCost" type="number" min="0" step="0.01" placeholder="Unknown" inputmode="decimal"></label>
+<label for="taxCost">Taxes / duties estimate (USD)<input id="taxCost" type="number" min="0" step="0.01" placeholder="Unknown" inputmode="decimal"></label>
+</div>
+<div class="total" role="status" aria-live="polite">
+<span id="budgetLabel">Enter an items subtotal to begin</span>
+<strong id="budgetTotal">—</strong>
+<span id="budgetNote">Use a consistent currency for every field.</span>
+</div>
+</article>
+</div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
+<h2 id="faq-title">Sugargoo spreadsheet questions</h2>
+<details>
+<summary>Is this an official Sugargoo website?</summary>
+<p>No. This is an independent discovery page using selected CAFANS catalog references. It is not operated by Sugargoo and does not claim approval or affiliation.</p>
+</details>
+<details>
+<summary>Where do the shopping buttons take me?</summary>
+<p>The Sugargoo spreadsheet and Buy it now buttons both open https://cafans.com. They lead to the CAFANS homepage, where you can locate a listing and review its available details. They do not initiate checkout or open a preselected Sugargoo order.</p>
+</details>
+<details>
+<summary>Can every listed product be ordered through Sugargoo?</summary>
+<p>That has not been verified. Find the original seller listing and check current item acceptance with Sugargoo before paying. A product appearing in a third-party catalog does not establish that a particular agent will purchase or ship it.</p>
+</details>
+<details>
+<summary>Are the displayed USD amounts final prices?</summary>
+<p>No. They are indicative item prices recorded from the CAFANS homepage. Selected options, exchange rates and current listing prices can change. Shipping, payment fees, service charges and applicable taxes may add to the total.</p>
+</details>
+<details>
+<summary>Are there verified QC photos for these products?</summary>
+<p>This page does not provide verified QC photos or product test results. Review the source listing, request the evidence you need and inspect photos of your own order before making a shipping decision.</p>
+</details>
+<details>
+<summary>How should I keep my own product spreadsheet?</summary>
+<p>Use one row per product option. Include the source URL, seller, category, size, color, original currency, recorded price, checked date and open questions. Keep quoted costs separate from estimates and revisit each listing before ordering.</p>
+</details>
+<details>
+<summary>Does this directory update automatically?</summary>
+<p>No. The visible table is a dated selection of nine CAFANS listings. Search and sorting operate on this selection only. Visit CAFANS for its current catalog.</p>
+</details>
+</section>
+
+<section aria-label="Explore CAFANS">
+<div class="cta">
+<div>
+<h2>Keep your next shortlist simple.</h2>
+<p>Browse CAFANS, save the exact option and confirm the details that matter.</p>
+</div>
+<a class="btn lime" href="https://cafans.com">Buy it now ↗</a>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<p><strong>Sugargoo spreadsheet — independent discovery guide.</strong> Catalog source: <a href="https://cafans.com">CAFANS</a>. This page does not process orders or payments. Names identify source listings and do not imply brand affiliation or verified authenticity.</p>
+<p>Catalog references viewed November 19, 2026. Availability, acceptance and delivered costs require a current check.</p>
+</div>
+</footer>
+<script>
+(function(){
+"use strict";
+const body=document.querySelector("#products tbody");
+const rows=Array.from(body.rows);
+const search=document.getElementById("search");
+const category=document.getElementById("category");
+const sort=document.getElementById("sort");
+const count=document.getElementById("count");
+const empty=document.getElementById("empty");
+const normalize=value=>value.toLowerCase().normalize("NFKC").trim();
+function update(){
+const terms=normalize(search.value).split(/\s+/).filter(Boolean);
+const selected=category.value;
+const ordered=rows.slice();
+if(sort.value==="low") ordered.sort((a,b)=>Number(a.dataset.price)-Number(b.dataset.price));
+if(sort.value==="high") ordered.sort((a,b)=>Number(b.dataset.price)-Number(a.dataset.price));
+if(sort.value==="name") ordered.sort((a,b)=>a.cells[0].textContent.localeCompare(b.cells[0].textContent));
+let visible=0;
+ordered.forEach(row=>{
+const text=normalize(row.cells[0].textContent+" "+row.dataset.category);
+row.hidden=!(terms.every(term=>text.includes(term))&&(selected==="all"||row.dataset.category===selected));
+if(!row.hidden) visible++;
+body.appendChild(row);
+});
+count.textContent=visible+" product"+(visible===1?"":"s")+" in this selection.";
+empty.hidden=visible!==0;
+}
+search.addEventListener("input",update);
+category.addEventListener("change",update);
+sort.addEventListener("change",update);
+const fields=["itemCost","localCost","serviceCost","shippingCost","taxCost"].map(id=>document.getElementById(id));
+const money=new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"});
+function calculate(){
+const invalid=fields.some(field=>field.validity.badInput||(field.value!==""&&(!Number.isFinite(Number(field.value))||Number(field.value)<0)));
+const total=document.getElementById("budgetTotal");
+const label=document.getElementById("budgetLabel");
+const note=document.getElementById("budgetNote");
+if(invalid){
+label.textContent="Check your amounts";
+total.textContent="—";
+note.textContent="Enter valid amounts of zero or more.";
+return;
+}
+if(fields[0].value===""){
+label.textContent="Enter an items subtotal to begin";
+total.textContent="—";
+note.textContent="Use a consistent currency for every field.";
+return;
+}
+const unknown=fields.slice(1).filter(field=>field.value==="").length;
+const amount=fields.reduce((sum,field)=>sum+(field.value===""?0:Number(field.value)),0);
+label.textContent=unknown?"Known-cost subtotal":"Estimated combined cost";
+total.textContent=money.format(amount);
+note.textContent=unknown?unknown+" charge field"+(unknown===1?" is":"s are")+" unknown and excluded. This is an incomplete budget.":"Based on your entries only. Confirm the current payable total before purchasing.";
+}
+fields.forEach(field=>field.addEventListener("input",calculate));
+})();
+</script>
+</body>
+</html>
